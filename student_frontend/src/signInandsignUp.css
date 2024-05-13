@@ -1,0 +1,119 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f4f4f4;
+       /* Add these lines */
+       background-image: url("/src/images/background.jpeg"); /* Add your image path here */
+       background-size: cover; /* Shrink the image to fit */
+       background-position: center; /* Center the image */
+       background-repeat: no-repeat;
+    /* Add this line to make the background blurry */
+       backdrop-filter: blur(5px); /* Adjust the pixel value to control the amount of blur */ 
+}
+.card {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform .2s; /* Animation */
+}
+
+.card:hover {
+    transform: scale(1.02); /* (110% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+.navbar {
+    background-color: #333; /* Dark background for the navbar */
+    padding: 10px 0;
+    text-align: center;
+}
+
+.nav-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-item {
+    margin: 0 15px;
+}
+
+.nav-link {
+    display: block;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.nav-link:hover {
+    background-color: #555; /* Slightly lighter background on hover */
+}
+
+.container {
+    width: 600px;
+    background-color: #fff;
+    border-radius: 4px;
+    padding: 40px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+h1 {
+    margin-bottom: 20px;
+    color: #333;
+  }
+
+input,
+select,
+button {
+    display: block;
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+    button:hover {
+        background-color: #0056b3;
+    }
+
+p {
+    color: gold;
+    margin-top: 10px;
+}
+
+.success-message {
+    color: green;
+    margin-top: 10px;
+}
+.intro-text {
+    color: #555;
+    margin-bottom: 30px;
+  }
+
+  .container img {
+    width: 100%; /* Set the image width to 100% of its container */
+    height: auto; /* Maintain aspect ratio */
+    max-height: 300px; /* Set a maximum height if needed */
+    margin-bottom: 20px; /* Add margin to separate images */
+  }
